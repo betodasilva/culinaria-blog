@@ -19,8 +19,16 @@ $white: #ffffff;
   padding: 0;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+
+}
 body {
   background: $bodybg;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-smoothing: antialiased;
   @media screen and (min-width: 1080px) {
@@ -29,6 +37,12 @@ body {
 
   background: url('../images/cocina.gif') scroll;
 }
+
+h1,
+h2,
+h3,
+h4 
+{ font-family: 'Merriweather', serif; }
 
 h1 { font-size: 2em; margin: .3em 0;}
 h2 { font-size: 1.6em; }
@@ -234,7 +248,7 @@ img {
 .main,
 .sidebar{
   background: $white;
-  padding: 2em 4em;
+  padding: 4em;
   @media all and (max-width: 480px) {
     padding: 1em 2em;
   }
@@ -272,6 +286,15 @@ img {
     margin: 1em 0;
     display: flex;
     flex-wrap: wrap;
+    &:after {
+      content: "";
+      display: block;
+      max-width: 70%;
+      width: 70%;
+      height: 1px;
+      background-color: #ccc;
+      margin: 2em auto;
+    }
   }
 
   .post__btn {
@@ -322,4 +345,17 @@ img {
   bottom: auto;
   top: 0;
   width: 70%;
+}
+
+.post__content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.logo {
+  width: 60px;
+  @media all and (min-width: 768px) {
+    width: 80px;
+  }
 }
