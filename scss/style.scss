@@ -363,6 +363,7 @@ img {
 
 .logo {
   width: 60px;
+  cursor: pointer;
   @media all and (min-width: 768px) {
     width: 80px;
   }
