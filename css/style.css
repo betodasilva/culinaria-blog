@@ -164,7 +164,12 @@ img {
         transition: all 280ms ease-in-out; } }
   @media all and (min-width: 768px) {
     .navbar__list .nav__list-item {
-      margin: 1em; } }
+      margin: 1em; }
+    .navbar__list .nav__link {
+      padding-bottom: .2em; }
+      .navbar__list .nav__link:hover {
+        border-bottom: 1px solid #333;
+        transition: all 280ms ease-in-out; } }
 
 .after-img {
   margin-top: .7em; }
@@ -229,8 +234,6 @@ img {
     transition: all 280ms ease-in-out;
     line-height: 2em;
     text-align: right; }
-  .post-list .post__image {
-    box-shadow: 1px 1px 10px 0 #ccc; }
 
 .btn-2 {
   letter-spacing: 0; }

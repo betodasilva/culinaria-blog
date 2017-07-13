@@ -43,6 +43,7 @@ a {
   &:focus {
     outline: none;
   }
+
 }
 
 button:focus {outline: none; }
@@ -194,10 +195,20 @@ img {
       opacity: 1;
       transition: all 280ms ease-in-out;
     }
+    
   }
   @media all and (min-width: 768px) {
     .nav__list-item {
       margin: 1em;
+    }
+
+    .nav__link {
+      padding-bottom: .2em;
+      &:hover {
+        border-bottom: 1px solid #333;
+        transition: all 280ms ease-in-out;  
+      }
+      
     }
   }
 }
@@ -272,7 +283,7 @@ img {
     text-align: right;
   }
 
-  .post__image { box-shadow: 1px 1px 10px 0 #ccc; }
+  // .post__image { box-shadow: 1px 1px 10px 0 #ccc; }
 
   
 }
