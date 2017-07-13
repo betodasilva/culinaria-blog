@@ -180,8 +180,14 @@ img {
       margin: 1em; }
     .navbar__list .nav__link {
       padding-bottom: .2em; }
-      .navbar__list .nav__link:hover {
-        border-bottom: 1px solid #333;
+      .navbar__list .nav__link:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: #333; }
+      .navbar__list .nav__link:hover:after {
+        width: 100%;
         transition: all 280ms ease-in-out; } }
 
 .after-img {

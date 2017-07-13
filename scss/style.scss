@@ -218,8 +218,16 @@ img {
 
     .nav__link {
       padding-bottom: .2em;
-      &:hover {
-        border-bottom: 1px solid #333;
+      &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: #333;
+
+      }
+      &:hover:after {
+        width: 100%;
         transition: all 280ms ease-in-out;  
       }
       
